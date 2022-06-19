@@ -1,0 +1,28 @@
+.list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+}
+
+.ul {
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+}
