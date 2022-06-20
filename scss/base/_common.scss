@@ -7,22 +7,22 @@ body {
   letter-spacing: 0.03em;
 }
 
-// .section {
+.section {
 
-//   padding-top: 60px;
-//   padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-//   @include mq(tablet) {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-//   }
+  @include mq(tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-//   @include mq(desktop) {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-//   }
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
-// }
+}
 
 // .section-group {
 //   padding-top: 94px;
@@ -30,8 +30,4 @@ body {
 //   background-color: #f5f4fa;
 // }
 
-.section-working {
-  margin-top: 0;
-  margin-bottom: 0;
-  //   padding-bottom: 94px;
-}
+

@@ -1,3 +1,15 @@
+
+.section-working {
+
+    @include mq (not-desktop) {
+            display: none;
+        }
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 94px;
+}
+
 .work {
     display: flex;
     justify-content: center;
