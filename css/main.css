@@ -433,6 +433,12 @@ textarea {
 .sub__button {
   margin-left: 12px;
 }
+@media screen and (min-width: 480px) {
+  .sub__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .logo {
   display: -webkit-box;
@@ -445,6 +451,15 @@ textarea {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .header__logo {
@@ -557,6 +572,23 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .form-subscription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .form-field {
@@ -1347,20 +1379,32 @@ textarea {
 }
 
 .join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  justify-content: center;
 }
 
 .join-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -1372,21 +1416,56 @@ textarea {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+@media screen and (min-width: 480px) {
+  .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .subscription {
-  width: 570px;
+  width: 100vw;
   height: 86px;
   margin-left: 93px;
 }
 
 .subscription-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 20px;
   color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
