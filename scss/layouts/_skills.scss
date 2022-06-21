@@ -79,6 +79,12 @@
   @include mq(mobile) {
     text-align: center;
   }
+
+    @include mq(tablet) {
+      text-align: start;
+    }
+
+
 }
 
 .icon-antenna::before {

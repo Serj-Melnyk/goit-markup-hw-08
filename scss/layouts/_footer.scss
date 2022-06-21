@@ -15,14 +15,26 @@
   display: inline-block;
 
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
-  margin-right: 156px;
 
   color: #ffffff;
+
+  @include mq(desktop) {
+    margin-right: 156px;
+  }
 }
 
 .footer-link {
-  display: inline-block;
+  @include mq(desktop) {
+    justify-content: flex-start;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-top: 0;
   margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
@@ -55,13 +67,18 @@
 }
 
 .join {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   margin-top: 60px;
   margin-bottom: 60px;
-  justify-content: center;
+
+  @include mq(tablet) {
+     margin-right: 89px;
+    }
+
+
 }
 
 .join-title {
@@ -87,25 +104,51 @@
     align-items: center;
   }
 
-  display: flex;
-  align-items: baseline;
+     @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: baseline;
+     }
+
+  @include mq(desktop) {
+   
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: baseline;
+  }
 }
 
-.box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(tablet) {
+     margin-left: 75px;
+    }
+
+  @include mq(desktop) {
+    align-items: flex-start;
+    margin-left: 0;
+  }
 }
 
 .subscription {
-  width: 100vw;
-  height: 86px;
 
-  margin-left: 93px;
+  width: 100%;
+  // width: 570px;
+  // height: 86px;
+
+  // margin-left: 93px;
 }
 
 .subscription-title {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
