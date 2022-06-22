@@ -7,12 +7,13 @@
   }
 
   @include mq(tablet) {
-    align-self: center;
+    // align-self: center;
   }
 
   @include mq(desktop) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
   }
 }
@@ -20,17 +21,26 @@
 .form-field {
   position: relative;
 
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     margin-bottom: 20px;
+    width: 100%;
+  }
+
+  @include mq(tablet) {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 0;
+    width: 358px;
   }
 }
 
 .form-input {
-  @include mq(mobile-only) {
+  width: 100%;
   
-  }
-
-  width: 358px;
   height: 50px;
   padding-left: 16px;
   margin: 0;
