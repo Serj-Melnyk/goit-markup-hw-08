@@ -9,6 +9,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mq(tablet) {
+            display: flex;
+            align-items: center;
+                justify-content: center;
+        }
 }
 
 .main-nav__navigation {
@@ -19,7 +25,18 @@
 
 .site-nav {
     display: flex;
-    margin-left: 93px;
+    
+
+    @include mq(tablet) {
+            display: flex;
+            margin-left: 88px;
+        }
+
+                @include mq(desktop) {
+                    margin-left: 93px;
+                }
+
+
 }
 
 .site-nav__item:not(:last-child) {
