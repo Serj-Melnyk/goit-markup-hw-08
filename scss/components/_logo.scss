@@ -1,5 +1,23 @@
 .logo {
+  @include mq(mobile) {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq(tablet) {
+    color: var(--accent-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+  }
+
+  @include mq(desktop) {
+    // display: flex;
 
     color: var(--accent-color);
     font-family: var(--secondary-font);
@@ -8,21 +26,9 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
-
-
-    @include mq(mobile) {
-
-        display: flex;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-
-
+  }
 }
 
 .header__logo {
-    color: #000000;
-
-
+  color: #000000;
 }
