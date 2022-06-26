@@ -15,20 +15,7 @@
   }
 }
 
-.footer__logo {
-  display: inline-block;
 
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-
-  color: #ffffff;
-
-  @include mq(desktop) {
-    margin-right: 156px;
-  }
-}
 
 .footer-link {
   @include mq(desktop) {
