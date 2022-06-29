@@ -1,24 +1,15 @@
 .examples {
-  @include mq(mobile) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 
   @include mq(tablet) {
-    // display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    // gap: 30px;
     justify-content: flex-start;
   }
-
-   @include mq(desktop) {
-    
-
-}
 }
 
 .examples__thumb {
@@ -47,29 +38,27 @@
 }
 
 .examples__item {
-  @include mq(mobile) {
-    // margin-left: 0;
-    // margin-right: 0;
-  }
+
+  display: flex;
 
   @include mq(tablet) {
-   width: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
 
-//     margin-right: 30px;
-//         margin-bottom: 30px;
-    
-//         &:nth-child(2n) {
-//             margin-right: 0;
-//         }
-    
-//         &:nth-last-child(-n + 2) {
-//             margin-bottom: 0;
-//         }
+    //     margin-right: 30px;
+    //         margin-bottom: 30px;
+
+    //         &:nth-child(2n) {
+    //             margin-right: 0;
+    //         }
+
+    //         &:nth-last-child(-n + 2) {
+    //             margin-bottom: 0;
+    //         }
   }
 
   @include mq(desktop) {
-   width:  calc((100% - 60px) / 3);
-  
+    width: calc((100% - 60px) / 3);
+
     // margin-right: 30px;
     // margin-bottom: 30px;
 
@@ -81,13 +70,9 @@
     //   margin-bottom: 0;
     // }
   }
-
-  
 }
 
-
-
-.examples-title {
+.examples-projects__title {
   color: var(--title-color);
   font-weight: 700;
   font-size: 18px;
@@ -98,7 +83,7 @@
   margin-bottom: 4px;
 }
 
-.examples-text {
+.examples-projects__text {
   color: var(--text-color);
 
   font-size: 16px;
@@ -116,6 +101,11 @@
 }
 
 .examples__link {
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -147,7 +137,7 @@
 
 /* projects */
 
-.projects {
+.examples-projects {
   padding: 20px 24px;
 
   border-left: 1px solid #eeeeee;

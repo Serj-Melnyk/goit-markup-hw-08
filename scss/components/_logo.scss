@@ -1,47 +1,26 @@
 .logo {
-  @include mq(mobile) {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 
-    color: var(--accent-color);
-      font-family: var(--secondary-font);
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.17;
-      letter-spacing: 0.03em;
-    
-      text-decoration: none;
-  }
+  color: var(--accent-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 
-  @include mq(tablet) {
-    // color: var(--accent-color);
-    // font-family: var(--secondary-font);
-    // font-weight: 700;
-    // font-size: 24px;
-    // line-height: 1.17;
-    // letter-spacing: 0.03em;
-
-    // text-decoration: none;
-  }
+  text-decoration: none;
 
   @include mq(desktop) {
-
-
-    // color: var(--accent-color);
-    // font-family: var(--secondary-font);
-    // font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
   }
 }
 
 .header__logo {
   color: #000000;
 }
-
 
 .footer__logo {
   display: inline-block;
