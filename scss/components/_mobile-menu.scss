@@ -1,0 +1,125 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 40px 48px;
+  width: 100%;
+  height: 100%;
+
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  //   textarea
+
+  @include mq(tablet) {
+    display: none;
+  }
+}
+
+.mobile-menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu__contacts {
+  margin-top: auto;
+}
+
+// .mobile-menu__contacts-item:not(:last-child) {
+//   margin-bottom: 32px;
+// }
+
+.mobile-menu__contacts-tel {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+
+  //   &:hover,
+  //   &:focus {
+  //     color: var(--accent-color);
+  //   }
+}
+
+.mobile-menu__contacts-mail {
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu__cocials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mobile-menu__cocials-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mobile-menu__cocials-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu__button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  background: #8a1818;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: var(--accent-color);
+  }
+
+  //      &:hover + .modal__cross,
+  //      &:focus + .modal__cross {
+  //     fill: var(--accent-color);
+  // }
+}
+.mobile-menu__button .icon-cross {
+  display: none;
+}
