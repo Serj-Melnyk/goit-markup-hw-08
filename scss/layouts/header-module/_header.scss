@@ -2,13 +2,18 @@
   border-bottom: 2px solid #ececec;
 }
 .header-nav {
-  display: flex;
-  align-items: center;
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
+
+
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  min-height: 60px;
 
   @include mq(tablet) {
     display: flex;
@@ -22,13 +27,25 @@
 }
 
 .main-nav__navigation {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
+  @include mq(tablet) {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.main-nav__connect{
+  @include mq(mobile-only) {
+    display: none;
+
+  }
+ 
+
+  
 }
 
 .site-nav {
-  display: flex;
+  display: none;
 
   @include mq(tablet) {
     display: flex;
@@ -41,44 +58,54 @@
 }
 
 .site-nav__item:not(:last-child) {
-  margin-right: 50px;
+  @include mq(tablet) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
-  position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @include mq(tablet) {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-  color: var(--title-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .site-nav__link:hover,
 .site-nav__link:focus {
-  color: var(--accent-color);
+  @include mq(tablet) {
+    color: var(--accent-color);
+  }
 }
 
 .site-nav__link.curent {
-  color: var(--accent-color);
+  @include mq(tablet) {
+    color: var(--accent-color);
+  }
 }
 
 .site-nav__link.curent::after {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  left: 0;
-  bottom: 0;
+  @include mq(tablet) {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    left: 0;
+    bottom: 0;
 
-  width: 100%;
-  height: 4px;
+    width: 100%;
+    height: 4px;
 
-  background: var(--accent-color);
-  border-radius: 2px;
+    background: var(--accent-color);
+    border-radius: 2px;
+  }
 }

@@ -1,6 +1,6 @@
 .btn {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 40px;
 
@@ -23,11 +23,16 @@
 }
 
 .btn__list:nth-child(n+4) {
-    margin-top: 15px;
 
-    @include mq(tablet) {
-            margin-top: 0;
+    @include mq(mobile-only) {
+            margin-top: 15px;
         }
+
+    
+
+    // @include mq(tablet) {
+    //         margin-top: 0;
+    //     }
 }
 
 .btn__item {
