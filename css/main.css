@@ -809,11 +809,16 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0;
+  pointer-events: none;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu .is-open {
+  opacity: 1;
 }
 
 .mobile-menu__nav-item:not(:last-child) {
@@ -921,11 +926,11 @@ textarea {
   display: none;
 }
 
-.mobile-menu__button .is-open .icon-cross {
+.mobile-menu__button.is-open .icon-cross {
   display: block;
 }
 
-.mobile-menu__button .is-open .icon-menu {
+.mobile-menu__button.is-open .icon-menu {
   display: none;
 }
 

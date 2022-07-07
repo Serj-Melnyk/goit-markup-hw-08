@@ -11,11 +11,16 @@
   display: flex;
   flex-direction: column;
 
-  opacity: 0;
+  // opacity: 0;
+  pointer-events: none;
 
   @include mq(tablet) {
     display: none;
   }
+}
+
+.mobile-menu.is-open{
+  opacity: 1;
 }
 
 .mobile-menu__nav-item:not(:last-child) {
@@ -138,12 +143,10 @@
 .mobile-menu__button .icon-cross {
   display: none;
 }
-.mobile-menu__button .is-open .icon-cross {
+.mobile-menu__button.is-open .icon-cross {
   display: block;
+
 }
-.mobile-menu__button .is-open .icon-menu {
+.mobile-menu__button.is-open .icon-menu {
   display: none;
 }
-
-
-
