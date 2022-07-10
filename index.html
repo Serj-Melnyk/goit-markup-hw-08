@@ -22,14 +22,9 @@
     <!--шапка сайта-->
     <header class="header">
         <div class="container">
-
             <!-- mobile menu -->
 
-
-
-
             <div class="main-nav">
-
                 <button type="button" class="mobile-menu__button is-open" aria-expanded="false" data-menu-button
                     aria-label="Переключатель мобильного меню">
                     <svg class="mobile-menu__burger" width="40" height="40">
@@ -80,10 +75,7 @@
                             </a>
                         </li>
                     </ul>
-
-
                 </div>
-
 
                 <div class="main-nav__navigation">
                     <nav class="header-nav">
@@ -281,7 +273,27 @@
 
                 <ul class="team list">
                     <li class="team__item">
-                        <img src="./images/team/card1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="
+                    ./images/team/card1.jpg                        1x,
+                    images\adaptiv-img\desktop\img-desk-min-2x.jpg 2x
+                  " />
+
+                            <source media="(min-width: 768px)" srcset="
+                      images\adaptiv-img\tablet\img.jpg                      1x,
+                    images\adaptiv-img\tablet\img-2x.jpg 2x
+                  " />
+
+                            <source media="(min-width: 480px)" srcset="
+                    images\adaptiv-img\mobile\img.jpg                       1x,
+                    images\adaptiv-img\mobile\img-2x.jpg 2x
+                  " />
+
+                            <img src="images\adaptiv-img\mobile\img.jpg " alt="Игорь Демьяненко" width="450"
+                                height="460" />
+                        </picture>
+
+
 
                         <div class="guys">
                             <div class="team-member">
@@ -596,8 +608,6 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/_mobile-menu.js"></script>
-
-
 </body>
 
 </html>
