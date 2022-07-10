@@ -10,20 +10,21 @@
 
 
 .main-nav {
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 60px;
 
-  @include mq(tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  // @include mq(tablet) {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  // }
 
-  @include mq(desktop) {
-    justify-content: space-between;
-  }
+  // @include mq(desktop) {
+  //   justify-content: space-between;
+  // }
 }
 
 .main-nav__navigation {
