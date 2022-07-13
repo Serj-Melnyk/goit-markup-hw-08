@@ -22,14 +22,9 @@
     <!--шапка сайта-->
     <header class="header">
         <div class="container">
-
             <!-- mobile menu -->
 
-
-
-
             <div class="main-nav">
-
                 <button type="button" class="mobile-menu__button is-open" aria-expanded="false" data-menu-button
                     aria-label="Переключатель мобильного меню">
                     <svg class="mobile-menu__burger" width="40" height="40">
@@ -80,10 +75,7 @@
                             </a>
                         </li>
                     </ul>
-
-
                 </div>
-
 
                 <div class="main-nav__navigation">
                     <nav class="header-nav">
@@ -281,7 +273,26 @@
 
                 <ul class="team list">
                     <li class="team__item">
-                        <img src="./images/team/card1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                        <picture>
+                            <source media="(min-width: 1200px )" srcset="
+                    ./images/team/card1.jpg                           1x,
+                    images\adaptiv-img\desktop\card-1-desk-2x-min.jpg 2x
+                  " />
+
+                            <source media="(min-width: 768px )" srcset="
+                    images\adaptiv-img\tablet\card-1-tab-min.jpg    1x,
+                    images\adaptiv-img\tablet\card-1-tab-2x-min.jpg 2x
+                  " />
+
+                            <source media="(max-width: 767px )" srcset="
+                            images\adaptiv-img\mobile\card-1-mob-min.jpg 1x,
+                            images\adaptiv-img\mobile\card-1-mob-2x-min.jpg 2x
+                
+                ">
+
+                            <img class="team__img" src="./images/adaptiv-img/mobile/card-1-mob-min.jpg"
+                                alt="Игорь Демьяненко" width="450" height="460" />
+                        </picture>
 
                         <div class="guys">
                             <div class="team-member">
@@ -327,7 +338,8 @@
                     </li>
 
                     <li class="team__item">
-                        <img src="./images/team/card2.jpg" alt="Ольга Репина" width="270" height="260" />
+                        <img class=".team__img" src="./images/team/card2.jpg" alt="Ольга Репина" width="270"
+                            height="260" />
                         <div class="guys">
                             <div class="team-member">
                                 <h3 class="team-member__title">Ольга Репина</h3>
@@ -371,7 +383,8 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/team/card3.jpg" alt="Николай Тарасов" width="270" height="260" />
+                        <img class=".team__img" src="./images/team/card3.jpg" alt="Николай Тарасов" width="270"
+                            height="260" />
                         <div class="guys">
                             <div class="team-member">
                                 <h3 class="team-member__title">Николай Тарасов</h3>
@@ -415,7 +428,8 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/team/card4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+                        <img class=".team__img" src="./images/team/card4.jpg" alt="Михаил Ермаков" width="270"
+                            height="260" />
                         <div class="guys">
                             <div class="team-member">
                                 <h3 class="team-member__title">Михаил Ермаков</h3>
@@ -596,8 +610,6 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/_mobile-menu.js"></script>
-
-
 </body>
 
 </html>

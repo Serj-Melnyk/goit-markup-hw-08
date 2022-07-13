@@ -140,11 +140,11 @@
 //     fill: var(--accent-color);
 // }
 
-// .mobile-menu__burger {
-//   @include mq(tablet) {
-//     display: none;
-//   }
-// }
+.mobile-menu__burger {
+  @include mq(tablet) {
+    display: none;
+  }
+}
 
 .mobile-menu__button .icon-cross {
   display: none;
