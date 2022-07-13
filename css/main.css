@@ -592,6 +592,10 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .btn {
@@ -602,16 +606,6 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 50px;
-  }
-}
-
-.btn__list:not(:last-child) {
-  margin-right: 8px;
-}
-
-@media screen and (max-width: 767.98px) {
-  .btn__list:nth-child(n+4) {
-    margin-top: 15px;
   }
 }
 
