@@ -109,7 +109,7 @@
 }
 
 .mobile-menu__button {
-  @include mq(mobile) {
+
     position: absolute;
     display: flex;
     justify-content: center;
@@ -128,7 +128,7 @@
       cursor: pointer;
       fill: var(--accent-color);
     }
-  }
+ 
 
   @include mq(tablet) {
     display: none;
