@@ -52,7 +52,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/adaptiv-img/mobile/Header-mob-min.jpg);
+    url(./images/adaptiv-img/mobile/Header-mob-min.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,7 +64,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/adaptiv-img/mobile/Header-mob-2x-min.jpg);
+      url(./images/adaptiv-img/mobile/Header-mob-2x-min.jpg);
   }
 
   @include mq(tablet) {
@@ -76,7 +76,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/adaptiv-img/tablet/Header-tab-min.jpg);
+      url(./images/adaptiv-img/tablet/Header-tab-min.jpg);
 
     @include retina {
       background-image: linear-gradient(
@@ -84,7 +84,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/adaptiv-img/tablet/Header-tab-2x-min.jpg);
+        url(./images/adaptiv-img/tablet/Header-tab-2x-min.jpg);
     }
   }
 
@@ -97,7 +97,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero/Img-hero.jpg);
+      url(./images/hero/Img-hero.jpg);
 
     @include retina{
       background-image: linear-gradient(
@@ -105,7 +105,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/adaptiv-img/desktop/desk-2x.jpg);
+        url(./images/adaptiv-img/desktop/desk-2x.jpg);
     }
   }
 }
