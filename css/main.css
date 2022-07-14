@@ -790,27 +790,30 @@ textarea {
 
 .mobile-menu {
   position: fixed;
-  top: 9%;
+  top: 0;
   left: 0;
   padding: 40px 48px;
   width: 100%;
   height: 100%;
   background-color: #fff;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.mobile-menu.is-open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  overflow: auto;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu.is-hidden {
+  display: none;
 }
 
 .mobile-menu__nav-item:not(:last-child) {
@@ -887,7 +890,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.mobile-menu__button {
+.mobile-menu__button-open {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -907,32 +910,44 @@ textarea {
   background: transparent;
   border: none;
 }
-.mobile-menu__button:hover, .mobile-menu__button:focus {
+.mobile-menu__button-open:hover, .mobile-menu__button-open:focus {
   cursor: pointer;
   fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu__button {
+  .mobile-menu__button-open {
     display: none;
   }
 }
 
+.mobile-menu__button-close {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+.mobile-menu__button-close:hover, .mobile-menu__button-close:focus {
+  cursor: pointer;
+  fill: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
-  .mobile-menu__burger {
+  .mobile-menu__button-close {
     display: none;
   }
-}
-
-.mobile-menu__button .icon-cross {
-  display: none;
-}
-
-.mobile-menu__button.is-open .icon-cross {
-  display: block;
-}
-
-.mobile-menu__button.is-open .icon-menu {
-  display: none;
 }
 
 .connect {
@@ -1267,8 +1282,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/adaptiv-img/desktop/desk-2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/adaptiv-img/desktop/desk-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/adaptiv-img/desktop/desk-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/adaptiv-img/desktop/desk-2x.jpg);
   }
 }
 

@@ -22,60 +22,12 @@
     <!--шапка сайта-->
     <header class="header">
         <div class="container">
-            <!-- mobile menu -->
+
 
             <div class="main-nav">
-                <button type="button" class="mobile-menu__button is-open" aria-expanded="false" data-menu-button
-                    aria-label="Переключатель мобильного меню">
-                    <svg class="mobile-menu__burger" width="40" height="40">
-                        <use class="icon-cross" href="./images/svg/sprite.svg#icon-close_40px"></use>
-                        <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu_40px"></use>
-                    </svg>
-                </button>
 
-                <div class="mobile-menu data-menu">
-                    <ul class="mobile-menu__nav list">
-                        <li class="mobile-menu__nav-item">
-                            <a href="./index.html" class="mobile-menu__nav-link link">Студия</a>
-                        </li>
-                        <li class="mobile-menu__nav-item">
-                            <a href="./portfolio.html" class="mobile-menu__nav-link link">Портфолио</a>
-                        </li>
-                        <li class="mobile-menu__nav-item">
-                            <a href="" class="mobile-menu__nav-link link">Контакты</a>
-                        </li>
-                    </ul>
 
-                    <ul class="mobile-menu__contacts list">
-                        <li class="mobile-menu__contacts-item">
-                            <a href="tel:+380961111111" class="mobile-menu__contacts-tel link">+38 096 111 11 11</a>
-                        </li>
-                        <li class="mobile-menu__contacts-item">
-                            <a href="mailto:info@devstudio.com"
-                                class="mobile-menu__contacts-mail link">info@devstudio.com</a>
-                        </li>
-                    </ul>
 
-                    <ul class="mobile-menu__cocials list">
-                        <li class="mobile-menu__cocials-item">
-                            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
-                                class="mobile-menu__cocials-link link">Instagram</a>
-                        </li>
-                        <li class="mobile-menu__cocials-item">
-                            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
-                                class="mobile-menu__cocials-link link">Twitter</a>
-                        </li>
-                        <li class="mobile-menu__cocials-item">
-                            <a href="" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
-                                class="mobile-menu__cocials-link link">Facebook</a>
-                        </li>
-                        <li class="mobile-menu__cocials-item">
-                            <a href="" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-                                class="mobile-menu__cocials-link link">LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </div>
 
                 <div class="main-nav__navigation">
                     <nav class="header-nav">
@@ -115,6 +67,71 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- mobile menu -->
+
+
+            <button type="button" class="mobile-menu__button-open " aria-label="Кнопка открытия мобильного меню">
+                <svg class="mobile-menu__burger" width="40" height="40">
+                    <!-- <use class="icon-cross" href="./images/svg/sprite.svg#icon-close_40px"></use> -->
+                    <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-menu is-hidden">
+
+                <button type="button" class="mobile-menu__button-close " aria-label="Кнопка закрытия мобильного меню">
+                    <svg class="mobile-menu__burger" width="40" height="40">
+                        <use class="icon-cross" href="./images/svg/sprite.svg#icon-close_40px"></use>
+                        <!-- <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu_40px"></use> -->
+                    </svg>
+                </button>
+
+
+                <ul class="mobile-menu__nav list">
+                    <li class="mobile-menu__nav-item">
+                        <a href="./index.html" class="mobile-menu__nav-link link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="./portfolio.html" class="mobile-menu__nav-link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="" class="mobile-menu__nav-link link">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-menu__contacts list">
+                    <li class="mobile-menu__contacts-item">
+                        <a href="tel:+380961111111" class="mobile-menu__contacts-tel link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                        <a href="mailto:info@devstudio.com"
+                            class="mobile-menu__contacts-mail link">info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-menu__cocials list">
+                    <li class="mobile-menu__cocials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                            class="mobile-menu__cocials-link link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__cocials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                            class="mobile-menu__cocials-link link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__cocials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                            class="mobile-menu__cocials-link link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__cocials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                            class="mobile-menu__cocials-link link">LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
         </div>
     </header>
     <main>
