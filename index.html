@@ -22,13 +22,7 @@
     <!--шапка сайта-->
     <header class="header">
         <div class="container">
-
-
             <div class="main-nav">
-
-
-
-
                 <div class="main-nav__navigation">
                     <nav class="header-nav">
                         <a href="./index.html" class="logo" lang="en">
@@ -70,8 +64,7 @@
 
             <!-- mobile menu -->
 
-
-            <button type="button" class="mobile-menu__button-open " aria-label="Кнопка открытия мобильного меню">
+            <button type="button" class="mobile-menu__button-open" aria-label="Кнопка открытия мобильного меню">
                 <svg class="mobile-menu__burger" width="40" height="40">
                     <!-- <use class="icon-cross" href="./images/svg/sprite.svg#icon-close_40px"></use> -->
                     <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu_40px"></use>
@@ -79,14 +72,12 @@
             </button>
 
             <div class="mobile-menu is-hidden">
-
-                <button type="button" class="mobile-menu__button-close " aria-label="Кнопка закрытия мобильного меню">
+                <button type="button" class="mobile-menu__button-close" aria-label="Кнопка закрытия мобильного меню">
                     <svg class="mobile-menu__burger" width="40" height="40">
                         <use class="icon-cross" href="./images/svg/sprite.svg#icon-close_40px"></use>
                         <!-- <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu_40px"></use> -->
                     </svg>
                 </button>
-
 
                 <ul class="mobile-menu__nav list">
                     <li class="mobile-menu__nav-item">
@@ -130,8 +121,6 @@
                     </li>
                 </ul>
             </div>
-
-
         </div>
     </header>
     <main>
@@ -293,18 +282,18 @@
                         <picture>
                             <source media="(min-width: 1200px )" srcset="
                     ./images/adaptiv-img/desktop/card-1-desk-min.jpg 1x,
-                    ./images/team/card1.jpg                         2x
+                    ./images/team/card1-2x.jpg                       2x
                   " />
 
                             <source media="(min-width: 768px )" srcset="
-                ./images/adaptiv-img/tablet/card-1-tab-min.jpg    1x,
-                ./images/adaptiv-img/tablet/card-1-tab-2x-min.jpg 2x
+                    ./images/adaptiv-img/tablet/card-1-tab-min.jpg    1x,
+                    ./images/adaptiv-img/tablet/card-1-tab-2x-min.jpg 2x
                   " />
 
                             <source media="(max-width: 767px )" srcset="
-                            ./images/adaptiv-img/mobile/card-1-mob-min.jpg 1x,
-                            ./images/adaptiv-img/mobile/card-1-mob-2x-min.jpg 2x
-                ">
+                    ./images/adaptiv-img/mobile/card-1-mob-min.jpg    1x,
+                    ./images/adaptiv-img/mobile/card-1-mob-2x-min.jpg 2x
+                  " />
 
                             <img class="team__img" src="./images/adaptiv-img/mobile/card-1-mob-min.jpg"
                                 alt="Игорь Демьяненко" width="450" height="460" />
@@ -354,8 +343,25 @@
                     </li>
 
                     <li class="team__item">
-                        <img class=".team__img" src="./images/team/card2.jpg" alt="Ольга Репина" width="270"
-                            height="260" />
+                        <picture>
+                            <source media="(min-width: 1200px )" srcset="
+                    images\adaptiv-img\desktop\card-2-desk-min.jpg 1x,
+                    ./images/team/card2-2x.jpg                     2x
+                  " />
+
+                            <source media="(min-width: 768px )" srcset="
+                    ./images/adaptiv-img/tablet/card-2-tab-min.jpg    1x,
+                    ./images/adaptiv-img/tablet/card-2-tab-2x-min.jpg 2x
+                  " />
+
+                            <source media="(max-width: 767px )" srcset="
+                    ./images/adaptiv-img/mobile/card-2-mob-min.jpg    1x,
+                    ./images/adaptiv-img/mobile/card-2-mob-2x-min.jpg 2x
+                  " />
+                            <img class="team__img" src="./images/adaptiv-img/mobile/card-2-mob-min.jpg "
+                                alt="Ольга Репина" width="450" height="460" />
+                        </picture>
+
                         <div class="guys">
                             <div class="team-member">
                                 <h3 class="team-member__title">Ольга Репина</h3>
@@ -399,8 +405,25 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class=".team__img" src="./images/team/card3.jpg" alt="Николай Тарасов" width="270"
-                            height="260" />
+                        <picture>
+                            <source media="(min-width: 1200px )" srcset="
+                    images\adaptiv-img\desktop\card-3-desk-min.jpg 1x,
+                    ./images/team/card3-2x.jpg                     2x
+                  " />
+
+                            <source media="(min-width: 768px )" srcset="
+                    ./images/adaptiv-img/tablet/card-3-tab-min.jpg    1x,
+                    ./images/adaptiv-img/tablet/card-3-tab-2x-min.jpg 2x
+                  " />
+
+                            <source media="(max-width: 767px )" srcset="
+                    ./images/adaptiv-img/mobile/card-3-mob-min.jpg    1x,
+                    ./images/adaptiv-img/mobile/card-3-mob-2x-min.jpg 2x
+                  " />
+                            <img class="team__img" src="./images/adaptiv-img/mobile/card-3-mob-min.jpg "
+                                alt="Николай Тарасов" width="450" height="460" />
+                        </picture>
+
                         <div class="guys">
                             <div class="team-member">
                                 <h3 class="team-member__title">Николай Тарасов</h3>
@@ -444,8 +467,24 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class=".team__img" src="./images/team/card4.jpg" alt="Михаил Ермаков" width="270"
-                            height="260" />
+                        <picture>
+                            <source media="(min-width: 1200px )" srcset="
+                    images\adaptiv-img\desktop\card-4-desk-min.jpg 1x,
+                    ./images/team/card4-2x.jpg                     2x
+                  " />
+
+                            <source media="(min-width: 768px )" srcset="
+                    ./images/adaptiv-img/tablet/card-4-tab-min.jpg    1x,
+                    ./images/adaptiv-img/tablet/card-4-tab-2x-min.jpg 2x
+                  " />
+
+                            <source media="(max-width: 767px )" srcset="
+                    ./images/adaptiv-img/mobile/card-4-mob-min.jpg    1x,
+                    ./images/adaptiv-img/mobile/card-4-mob-2x-min.jpg 2x
+                  " />
+                        </picture>
+                        <img class="team__img" src="./images/adaptiv-img/mobile/card-4-mob-min.jpg "
+                            alt="Михаил Ермаков" width="450" height="460" />
                         <div class="guys">
                             <div class="team-member">
                                 <h3 class="team-member__title">Михаил Ермаков</h3>
