@@ -836,6 +836,7 @@ textarea {
 }
 
 .mobile-menu__contacts-tel {
+  font-size: 24px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -843,10 +844,14 @@ textarea {
       flex-wrap: nowrap;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__contacts-tel {
+    font-size: 34px;
+  }
 }
 
 .mobile-menu__contacts-mail {

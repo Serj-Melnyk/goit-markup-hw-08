@@ -52,15 +52,20 @@
 }
 
 .mobile-menu__contacts-tel {
+  font-size: 24px;
   display: inline-flex;
   flex-wrap: nowrap;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 34px;
+
   line-height: 1.17;
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+
+  @include mq(mobile) {
+    font-size: 34px;
+  }
 
   //   &:hover,
   //   &:focus {
