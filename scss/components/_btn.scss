@@ -1,6 +1,6 @@
 .btn {
   display: flex;
-  // flex-direction: row;
+
   flex-wrap: wrap;
   margin-bottom: 40px;
   row-gap: 15px;
@@ -12,20 +12,6 @@
     margin-bottom: 50px;
   }
 }
-
-// .btn__list:not(:last-child) {
-//   margin-right: 8px;
-// }
-
-// .btn__list:nth-child(n + 4) {
-//   @include mq(mobile-only) {
-//     margin-top: 15px;
-//   }
-
-  // @include mq(tablet) {
-  //         margin-top: 0;
-  //     }
-// }
 
 .btn__item {
   color: var(--title-color);

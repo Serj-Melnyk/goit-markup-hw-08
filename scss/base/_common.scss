@@ -8,7 +8,6 @@ body {
 }
 
 .section {
-
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -21,35 +20,17 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
 }
 
 .section-group {
-
   @include mq(mobile) {
-      padding-top: 60px;
-        padding-bottom: 60px;
-        background-color: #f5f4fa;
-  
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f5f4fa;
+  }
 
-
-
-
-  // @include mq(tablet) {
-  //     padding-top: 60px;
-  //     padding-bottom: 60px;
-  //     background-color: #f5f4fa;
-  //   }
-
-        @include mq(desktop) {
-          padding-top: 94px;
-          padding-bottom: 94px;
-        }
-
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-  // background-color: #f5f4fa;
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-
-

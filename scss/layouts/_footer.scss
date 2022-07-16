@@ -15,8 +15,6 @@
   }
 }
 
-
-
 .footer-link {
   @include mq(desktop) {
     justify-content: flex-start;
@@ -121,8 +119,7 @@
   justify-content: center;
   align-items: center;
 
-  @include mq(tablet) {
-  }
+  @include mq(tablet) {}
 
   @include mq(desktop) {
     align-items: flex-start;
@@ -132,14 +129,12 @@
 
 .subscription {
   width: 100%;
-  
-  
-  @include mq(desktop) {
-      width: 570px;
-        height: 86px;
-        margin-left: 93px;
-    }
 
+  @include mq(desktop) {
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+  }
 }
 
 .subscription-title {
@@ -163,6 +158,6 @@
 
   @include mq(desktop) {
     margin-top: 0;
-   text-align: start;
+    text-align: start;
   }
 }

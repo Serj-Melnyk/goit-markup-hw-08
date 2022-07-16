@@ -13,13 +13,7 @@
 
   flex-direction: column;
 
-  // opacity: 0;
-  // pointer-events: none;
   overflow: auto;
-
-  //   &.is-open {
-  //     display: flex;
-  // }
 
   @include mq(tablet) {
     display: none;
@@ -89,6 +83,12 @@
 }
 
 .mobile-menu__cocials {
+  @media screen and (max-width: 478px) {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -96,7 +96,7 @@
 
 .mobile-menu__cocials-item {
   &:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 
@@ -112,7 +112,7 @@
     content: " ";
     margin-left: 10px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 
@@ -129,11 +129,13 @@
   padding: 0;
   background: transparent;
   border: none;
+
   &:hover,
   &:focus {
     cursor: pointer;
     fill: var(--accent-color);
   }
+
   @include mq(tablet) {
     display: none;
   }
@@ -163,24 +165,3 @@
     display: none;
   }
 }
-
-//      &:hover + .modal__cross,
-//      &:focus + .modal__cross {
-//     fill: var(--accent-color);
-// }
-
-// .mobile-menu__burger {
-//   @include mq(tablet) {
-//     display: none;
-//   }
-// }
-
-// .mobile-menu__button .icon-cross {
-//   display: none;
-// }
-// .mobile-menu__button.is-open .icon-cross {
-//   display: block;
-// }
-// .mobile-menu__button.is-open .icon-menu {
-//   display: none;
-// }

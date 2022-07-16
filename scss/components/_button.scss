@@ -32,16 +32,12 @@
 
 .sub__button {
     @include mq(mobile) {
-           margin-left: auto;
-           margin-right: auto;
-        }
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-                @include mq(desktop) {
-                    margin-left: 12px;
-                    margin-right: 0;
-                }
-
-
-   
+    @include mq(desktop) {
+        margin-left: 12px;
+        margin-right: 0;
+    }
 }
-

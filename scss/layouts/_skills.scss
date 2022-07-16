@@ -1,8 +1,6 @@
 .skills {
   gap: 30px;
 
-
-
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -16,31 +14,13 @@
 
 .skills__item {
   flex-grow: 1;
-  // &:not(:last-child) {
-  //   margin-bottom: 30px;
-  // }
 
   @include mq(tablet) {
     width: calc((100% - 60px) / 2);
-    // margin-right: 30px;
-    // margin-bottom: 30px;
-
-    // &:nth-child(2n) {
-    //   margin-right: 0;
-    // }
-
-    // &:nth-last-child(-n + 2) {
-    //   margin-bottom: 0;
-    // }
   }
 
   @include mq(desktop) {
     width: calc((100% - 90px) / 4);
-    // margin-bottom: 0;
-
-    // &:not(:last-child) {
-    //   margin-right: 30px;
-    // }
   }
 
   &:before {
@@ -82,11 +62,9 @@
     text-align: center;
   }
 
-    @include mq(tablet) {
-      text-align: start;
-    }
-
-
+  @include mq(tablet) {
+    text-align: start;
+  }
 }
 
 .icon-antenna::before {

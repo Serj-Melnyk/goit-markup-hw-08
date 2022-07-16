@@ -15,271 +15,490 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
     <!--шапка сайта-->
     <header class="header">
-
-        <div class="container ">
+        <div class="container">
             <div class="main-nav">
-
                 <div class="main-nav__navigation">
-                    <nav class=" header-nav">
+                    <nav class="header-nav">
                         <a href="./index.html" class="logo" lang="en">
                             Web<span class="header__logo">Studio</span>
                         </a>
 
                         <ul class="site-nav list">
-                            <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a>
+                            <li class="site-nav__item">
+                                <a class="site-nav__link" href="./index.html">Студия</a>
                             </li>
-                            <li class="site-nav__item"><a class="site-nav__link curent"
-                                    href="./portfolio.html">Портфолио</a>
+                            <li class="site-nav__item">
+                                <a class="site-nav__link curent" href="./portfolio.html">Портфолио</a>
                             </li>
-                            <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+                            <li class="site-nav__item">
+                                <a class="site-nav__link" href="">Контакты</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="main-nav__connect">
-                    <ul class="header-connection list ">
-                        <li class="header-connection__item"><a class="header-connection__link"
-                                href="mailto:info@devstudio.com">
+                    <ul class="header-connection list">
+                        <li class="header-connection__item">
+                            <a class="header-connection__link" href="mailto:info@devstudio.com">
                                 <svg class="envelope" width="16" height="12">
                                     <use href="./images/svg/sprite.svg#icon-envelope"></use>
                                 </svg>info@devstudio.com
-                            </a></li>
-                        <li class="header-connection__item"><a class="header-connection__link" href="tel:+380961111111">
+                            </a>
+                        </li>
+                        <li class="header-connection__item">
+                            <a class="header-connection__link" href="tel:+380961111111">
                                 <svg class="smartphone" width="10" height="16">
                                     <use href="./images/svg/sprite.svg#icon-smartphone"></use>
-                                </svg>+38 096 111 11 11</a></li>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
+            <!-- mobile menu -->
 
+            <button type="button" class="mobile-menu__button-open" aria-label="Кнопка открытия мобильного меню">
+                <svg class="mobile-menu__burger" width="40" height="40">
+
+                    <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-menu is-hidden">
+                <button type="button" class="mobile-menu__button-close" aria-label="Кнопка закрытия мобильного меню">
+                    <svg class="mobile-menu__burger" width="40" height="40">
+                        <use class="icon-cross" href="./images/svg/sprite.svg#icon-close_40px"></use>
+
+                    </svg>
+                </button>
+
+                <ul class="mobile-menu__nav list">
+                    <li class="mobile-menu__nav-item">
+                        <a href="./index.html" class="mobile-menu__nav-link link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="./portfolio.html" class="mobile-menu__nav-link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="" class="mobile-menu__nav-link link">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-menu__contacts list">
+                    <li class="mobile-menu__contacts-item">
+                        <a href="tel:+380961111111" class="mobile-menu__contacts-tel link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                        <a href="mailto:info@devstudio.com"
+                            class="mobile-menu__contacts-mail link">info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-menu__cocials list">
+                    <li class="mobile-menu__cocials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                            class="mobile-menu__cocials-link link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__cocials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                            class="mobile-menu__cocials-link link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__cocials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                            class="mobile-menu__cocials-link link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__cocials-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                            class="mobile-menu__cocials-link link">LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
     </header>
     <main>
         <!--портфолио-->
         <section class="section">
             <div class="container">
                 <ul class="btn list">
-                    <li class="btn__list"><button class="btn__item" type="button">Все</button></li>
-                    <li class="btn__list"><button class="btn__item" type="button">Веб-сайты</button></li>
-                    <li class="btn__list"><button class="btn__item" type="button">Приложения</button></li>
-                    <li class="btn__list"><button class="btn__item" type="button">Дизайн</button></li>
-                    <li class="btn__list"><button class="btn__item" type="button">Маркетинг</button></li>
+                    <li class="btn__list">
+                        <button class="btn__item" type="button">Все</button>
+                    </li>
+                    <li class="btn__list">
+                        <button class="btn__item" type="button">Веб-сайты</button>
+                    </li>
+                    <li class="btn__list">
+                        <button class="btn__item" type="button">Приложения</button>
+                    </li>
+                    <li class="btn__list">
+                        <button class="btn__item" type="button">Дизайн</button>
+                    </li>
+                    <li class="btn__list">
+                        <button class="btn__item" type="button">Маркетинг</button>
+                    </li>
                 </ul>
             </div>
 
-            <div class="container ">
-
+            <div class="container">
                 <h1 hidden>Примеры работ</h1>
 
                 <ul class="examples list">
                     <li class="examples__item">
                         <a class="examples__link link" href="">
                             <div class="examples__thumb">
-                                <img src="./images/portfolio/1.jpg" alt="Технокряк" width="370" height="294" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/1.jpg                             1x,
+                        ./images/adaptiv-img/desktop/porto-desk-1-2x-min.jpg 2x
+                      " />
+
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/adaptiv-img/tablet/porto-tab-1-min.jpg    1x,
+                        ./images/adaptiv-img/tablet/porto-tab-1-2x-min.jpg 2x
+                      " />
+                                    <source media="(max-width: 767px )" srcset="
+                        ./images/adaptiv-img/mobile/porto-mob-1-min.jpg    1x,
+                        ./images/adaptiv-img/mobile/porto-mob-1-2x-min.jpg 2x
+                      " />
+
+                                    <img class="porto-img" src="./images/adaptiv-img/mobile/porto-mob-1-min.jpg"
+                                        alt="Технокряк" width="450" height="294" />
+                                </picture>
 
                                 <div class="examples__overlay">
-                                    <p class="description">Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="description">
+                                        Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю
+                                        получить исчерпывающие сведения о компании или частном
+                                        лице.
                                     </p>
                                 </div>
-
-
-
                             </div>
                             <div class="examples-projects">
                                 <h2 class="examples-projects__title">Технокряк</h2>
                                 <p class="examples-projects__text">Веб-сайт</p>
-
                             </div>
                         </a>
                     </li>
                     <li class="examples__item">
                         <a class="examples__link link" href="">
                             <div class="examples__thumb">
-                                <img src="./images/portfolio/2.jpg" alt="Постер New Orlean vs Golden Star" width="370"
-                                    height="294" />
-                                <div class="examples__overlay">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/2.jpg                             1x,
+                        ./images/adaptiv-img/desktop/porto-desk-2-2x-min.jpg 2x
+                      " />
 
-                                    <p class="description">Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/adaptiv-img/tablet/porto-tab-2-min.jpg    1x,
+                        ./images/adaptiv-img/tablet/porto-tab-2-2x-min.jpg 2x
+                      " />
+                                    <source media="(max-width: 767px )" srcset="
+                        ./images/adaptiv-img/mobile/porto-mob-2-min.jpg    1x,
+                        ./images/adaptiv-img/mobile/porto-mob-2-2x-min.jpg 2x
+                      " />
+
+                                    <img class="porto-img" src="./images/adaptiv-img/mobile/porto-mob-2-min.jpg"
+                                        alt="Постер New Orlean vs Golden Star" width="450" height="294" />
+                                </picture>
+
+                                <div class="examples__overlay">
+                                    <p class="description">
+                                        Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю
+                                        получить исчерпывающие сведения о компании или частном
+                                        лице.
                                     </p>
                                 </div>
-
                             </div>
                             <div class="examples-projects">
-                                <h2 class="examples-projects__title">Постер New Orlean vs Golden Star</h2>
+                                <h2 class="examples-projects__title">
+                                    Постер New Orlean vs Golden Star
+                                </h2>
                                 <p class="examples-projects__text">Дизайн</p>
-
                             </div>
                         </a>
                     </li>
                     <li class="examples__item">
                         <a class="examples__link link" href="">
                             <div class="examples__thumb">
-                                <img src="./images/portfolio/3.jpg" alt="Ресторан Seafood" width="370" height="294" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/3.jpg                             1x,
+                        ./images/adaptiv-img/desktop/porto-desk-3-2x-min.jpg 2x
+                      " />
+
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/adaptiv-img/tablet/porto-tab-3-min.jpg    1x,
+                        ./images/adaptiv-img/tablet/porto-tab-3-2x-min.jpg 2x
+                      " />
+                                    <source media="(max-width: 767px )" srcset="
+                        ./images/adaptiv-img/mobile/porto-mob-3-min.jpg    1x,
+                        ./images/adaptiv-img/mobile/porto-mob-3-2x-min.jpg 2x
+                      " />
+
+                                    <img class="porto-img" src="./images/adaptiv-img/mobile/porto-mob-3-min.jpg"
+                                        alt="Ресторан Seafood" width="450" height="294" />
+                                </picture>
 
                                 <div class="examples__overlay">
-                                    <p class="description">Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="description">
+                                        Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю
+                                        получить исчерпывающие сведения о компании или частном
+                                        лице.
                                     </p>
                                 </div>
-
                             </div>
                             <div class="examples-projects">
                                 <h2 class="examples-projects__title">Ресторан Seafood</h2>
                                 <p class="examples-projects__text">Приложение</p>
-
                             </div>
                         </a>
                     </li>
                     <li class="examples__item">
                         <a class="examples__link link" href="">
                             <div class="examples__thumb">
-                                <img src="./images/portfolio/4.jpg" alt="Проект Prime" width="370" height="294" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/4.jpg                             1x,
+                        ./images/adaptiv-img/desktop/porto-desk-4-2x-min.jpg 2x
+                      " />
+
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/adaptiv-img/tablet/porto-tab-4-min.jpg    1x,
+                        ./images/adaptiv-img/tablet/porto-tab-4-2x-min.jpg 2x
+                      " />
+                                    <source media="(max-width: 767px )" srcset="
+                        ./images/adaptiv-img/mobile/porto-mob-4-min.jpg    1x,
+                        ./images/adaptiv-img/mobile/porto-mob-4-2x-min.jpg 2x
+                      " />
+
+                                    <img class="porto-img" src="./images/adaptiv-img/mobile/porto-mob-4-min.jpg"
+                                        alt="Проект Prime" width="450" height="294" />
+                                </picture>
 
                                 <div class="examples__overlay">
-                                    <p class="description">Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="description">
+                                        Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю
+                                        получить исчерпывающие сведения о компании или частном
+                                        лице.
                                     </p>
                                 </div>
-
                             </div>
                             <div class="examples-projects">
                                 <h2 class="examples-projects__title">Проект Prime</h2>
                                 <p class="examples-projects__text">Маркетинг</p>
-
                             </div>
                         </a>
                     </li>
                     <li class="examples__item">
                         <a class="examples__link link" href="">
                             <div class="examples__thumb">
-                                <img src="./images/portfolio/5.jpg" alt="Проект Boxes" width="370" height="294" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/5.jpg                             1x,
+                        ./images/adaptiv-img/desktop/porto-desk-5-2x-min.jpg 2x
+                      " />
+
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/adaptiv-img/tablet/porto-tab-5-min.jpg    1x,
+                        ./images/adaptiv-img/tablet/porto-tab-5-2x-min.jpg 2x
+                      " />
+                                    <source media="(max-width: 767px )" srcset="
+                        ./images/adaptiv-img/mobile/porto-mob-5-min.jpg    1x,
+                        ./images/adaptiv-img/mobile/porto-mob-5-2x-min.jpg 2x
+                      " />
+
+                                    <img class="porto-img" src="./images/adaptiv-img/mobile/porto-mob-5-min.jpg"
+                                        alt="Проект Boxes" width="450" height="294" />
+                                </picture>
 
                                 <div class="examples__overlay">
-                                    <p class="description">Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="description">
+                                        Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю
+                                        получить исчерпывающие сведения о компании или частном
+                                        лице.
                                     </p>
                                 </div>
-
                             </div>
                             <div class="examples-projects">
                                 <h2 class="examples-projects__title">Проект Boxes</h2>
                                 <p class="examples-projects__text">Приложение</p>
-
                             </div>
                         </a>
                     </li>
                     <li class="examples__item">
                         <a class="examples__link link" href="">
                             <div class="examples__thumb">
-                                <img src="./images/portfolio/6.jpg" alt="Inspiration has no Borders" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/6.jpg                             1x,
+                        ./images/adaptiv-img/desktop/porto-desk-6-2x-min.jpg 2x
+                      " />
+
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/adaptiv-img/tablet/porto-tab-6-min.jpg    1x,
+                        ./images/adaptiv-img/tablet/porto-tab-6-2x-min.jpg 2x
+                      " />
+                                    <source media="(max-width: 767px )" srcset="
+                        ./images/adaptiv-img/mobile/porto-mob-6-min.jpg    1x,
+                        ./images/adaptiv-img/mobile/porto-mob-6-2x-min.jpg 2x
+                      " />
+
+                                    <img class="porto-img" src="./images/adaptiv-img/mobile/porto-mob-6-min.jpg"
+                                        alt="Inspiration has no Borders" width="450" height="294" />
+                                </picture>
 
                                 <div class="examples__overlay">
-                                    <p class="description">Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="description">
+                                        Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю
+                                        получить исчерпывающие сведения о компании или частном
+                                        лице.
                                     </p>
                                 </div>
-
                             </div>
                             <div class="examples-projects">
-                                <h2 class="examples-projects__title">Inspiration has no Borders</h2>
+                                <h2 class="examples-projects__title">
+                                    Inspiration has no Borders
+                                </h2>
                                 <p class="examples-projects__text">Веб-сайт</p>
-
                             </div>
                         </a>
                     </li>
                     <li class="examples__item">
                         <a class="examples__link link" href="">
                             <div class="examples__thumb">
-                                <img src="./images/portfolio/7.jpg" alt="Издание Limited Edition" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/7.jpg                             1x,
+                        ./images/adaptiv-img/desktop/porto-desk-7-2x-min.jpg 2x
+                      " />
+
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/adaptiv-img/tablet/porto-tab-7-min.jpg    1x,
+                        ./images/adaptiv-img/tablet/porto-tab-7-2x-min.jpg 2x
+                      " />
+                                    <source media="(max-width: 767px )" srcset="
+                        ./images/adaptiv-img/mobile/porto-mob-7-min.jpg    1x,
+                        ./images/adaptiv-img/mobile/porto-mob-7-2x-min.jpg 2x
+                      " />
+
+                                    <img class="porto-img" src="./images/adaptiv-img/mobile/porto-mob-7-min.jpg "
+                                        alt="Издание Limited Edition" width="450" height="294" />
+                                </picture>
 
                                 <div class="examples__overlay">
-                                    <p class="description">Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="description">
+                                        Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю
+                                        получить исчерпывающие сведения о компании или частном
+                                        лице.
                                     </p>
                                 </div>
-
                             </div>
                             <div class="examples-projects">
-                                <h2 class="examples-projects__title">Издание Limited Edition</h2>
+                                <h2 class="examples-projects__title">
+                                    Издание Limited Edition
+                                </h2>
                                 <p class="examples-projects__text">Дизайн</p>
-
                             </div>
                         </a>
                     </li>
                     <li class="examples__item">
                         <a class="examples__link link" href="">
                             <div class="examples__thumb">
-                                <img src="./images/portfolio/8.jpg" alt="Проект LAB" width="370" height="294" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/8.jpg                             1x,
+                        ./images/adaptiv-img/desktop/porto-desk-8-2x-min.jpg 2x
+                      " />
+
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/adaptiv-img/tablet/porto-tab-8-min.jpg    1x,
+                        ./images/adaptiv-img/tablet/porto-tab-8-2x-min.jpg 2x
+                      " />
+                                    <source media="(max-width: 767px )" srcset="
+                        ./images/adaptiv-img/mobile/porto-mob-8-min.jpg    1x,
+                        ./images/adaptiv-img/mobile/porto-mob-8-2x-min.jpg 2x
+                      " />
+
+                                    <img class="porto-img" src="./images/adaptiv-img/mobile/porto-mob-8-min.jpg"
+                                        alt="Проект LAB" width="450" height="294" />
+                                </picture>
 
                                 <div class="examples__overlay">
-                                    <p class="description">Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="description">
+                                        Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю
+                                        получить исчерпывающие сведения о компании или частном
+                                        лице.
                                     </p>
                                 </div>
-
                             </div>
                             <div class="examples-projects">
                                 <h2 class="examples-projects__title">Проект LAB</h2>
                                 <p class="examples-projects__text">Маркетинг</p>
-
                             </div>
                         </a>
                     </li>
                     <li class="examples__item">
                         <a class="examples__link link" href="">
                             <div class="examples__thumb">
-                                <img src="./images/portfolio/9.jpg" alt="Growing Business" width="370" height="294" />
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                        ./images/portfolio/9.jpg                             1x,
+                        ./images/adaptiv-img/desktop/porto-desk-9-2x-min.jpg 2x
+                      " />
+
+                                    <source media="(min-width: 768px)" srcset="
+                        ./images/adaptiv-img/tablet/porto-tab-9-min.jpg    1x,
+                        ./images/adaptiv-img/tablet/porto-tab-9-2x-min.jpg 2x
+                      " />
+                                    <source media="(max-width: 767px )" srcset="
+                        ./images/adaptiv-img/mobile/porto-mob-9-min.jpg    1x,
+                        ./images/adaptiv-img/mobile/porto-mob-9-2x-min.jpg 2x
+                      " />
+
+                                    <img class="porto-img" src="./images/adaptiv-img/mobile/porto-mob-9-min.jpg"
+                                        alt="Growing Business" width="450" height="294" />
+                                </picture>
 
                                 <div class="examples__overlay">
-                                    <p class="description">Ресурс предлагает комплексные предложения с разным уровнем
-                                        функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="description">
+                                        Ресурс предлагает комплексные предложения с разным уровнем
+                                        функционала и сервисов. Все это позволит посетителю
+                                        получить исчерпывающие сведения о компании или частном
+                                        лице.
                                     </p>
                                 </div>
-
-
                             </div>
                             <div class="examples-projects">
                                 <h2 class="examples-projects__title">Growing Business</h2>
                                 <p class="examples-projects__text">Приложение</p>
-
-
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
-
-
-
-
         </section>
     </main>
     <!--подвал-->
     <footer class="footer">
         <div class="container">
-
             <div class="bottom">
                 <div class="box">
-
                     <a href="./index.html" class="logo" lang="en">
                         Web<span class="footer__logo">Studio</span></a>
 
@@ -291,7 +510,6 @@
                         <a class="footer-link tel" href="tel:+380961111111">+38 096 111 11 11</a>
                     </address>
                 </div>
-
 
                 <div class="join">
                     <h3 class="join-title">присоединяйтесь</h3>
@@ -329,34 +547,34 @@
                                 </svg>
                             </a>
                         </li>
-
                     </ul>
-
                 </div>
 
                 <!-- форма подписки -->
 
                 <div class="subscription">
-
                     <h3 class="subscription-title">Подпишитесь на рассылку</h3>
                     <form class="form-subscription">
                         <div class="form-field">
-                            <input type="email" class="form-input" name="mail" id="mail" placeholder="E-mail">
+                            <input type="email" class="form-input" name="mail" id="mail" placeholder="E-mail" />
                             <label class="form-label" for="mail">E-mail</label>
-
                         </div>
 
-                        <button type="submit" class="button sub__button">Подписаться
+                        <button type="submit" class="button sub__button">
+                            Подписаться
                             <svg class="icon-subscription" width="24" height="24">
                                 <use href="./images/svg/sprite.svg#icon-icon-send"></use>
                             </svg>
                         </button>
                     </form>
-
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+
+
 </body>
 
 </html>

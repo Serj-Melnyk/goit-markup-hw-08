@@ -1,6 +1,7 @@
 .header {
   border-bottom: 2px solid #ececec;
 }
+
 .header-nav {
   @include mq(tablet) {
     display: flex;
@@ -8,23 +9,11 @@
   }
 }
 
-
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 60px;
-
-  // @include mq(tablet) {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: space-between;
-  // }
-
-  // @include mq(desktop) {
-  //   justify-content: space-between;
-  // }
-
 }
 
 .main-nav__navigation {
@@ -35,14 +24,10 @@
   }
 }
 
-.main-nav__connect{
+.main-nav__connect {
   @include mq(mobile-only) {
     display: none;
-
   }
- 
-
-  
 }
 
 .site-nav {
@@ -110,4 +95,3 @@
     border-radius: 2px;
   }
 }
-

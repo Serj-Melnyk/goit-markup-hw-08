@@ -1,10 +1,8 @@
-
 .section-working {
+    @include mq(not-desktop) {
+        display: none;
+    }
 
-    @include mq (not-desktop) {
-            display: none;
-        }
-    
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 94px;

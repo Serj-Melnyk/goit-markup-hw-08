@@ -1,6 +1,4 @@
 .team {
-  // display: inline-block;
-
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +99,6 @@
     display: block;
     width: 100%;
     height: auto;
-
   }
 
   width: 450px;
