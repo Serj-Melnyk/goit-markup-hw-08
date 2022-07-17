@@ -605,6 +605,11 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn {
     margin-bottom: 50px;
   }
 }
@@ -1330,6 +1335,11 @@ textarea {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+@media screen and (max-width: 767px) {
+  .skills__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .skills__item {
     width: calc((100% - 60px) / 2);
@@ -1498,14 +1508,21 @@ textarea {
 }
 
 .team__title {
-  color: var(--title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 50px;
+  color: var(--title-color);
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .team__item {
@@ -1598,15 +1615,21 @@ textarea {
 }
 
 .clients__title {
-  font-family: var(--title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 50px;
-  color: #212121;
+  margin-bottom: 30px;
+  color: var(--title-color);
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .clients {
@@ -1683,9 +1706,6 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {

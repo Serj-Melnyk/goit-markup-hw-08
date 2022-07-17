@@ -15,6 +15,12 @@
 .skills__item {
   flex-grow: 1;
 
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @include mq(tablet) {
     width: calc((100% - 60px) / 2);
   }
