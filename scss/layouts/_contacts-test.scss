@@ -1,0 +1,34 @@
+// .grid-container {
+//     @include mq(mobile-only) {
+
+//         column-count: 1;
+//     }
+
+//     @include mq(mobile) {
+
+//         column-count: 2;
+//     }
+
+//     @include mq(tablet) {
+//         column-count: 3;
+//     }
+
+//     @include mq(desktop) {
+//         column-count: 4;
+//     }
+
+//     column-gap: 16px;
+//     margin: 8px 16px;
+
+//     .item {
+//         background-color: $grey-middle;
+//         margin: 8px 0;
+//         padding: 21px;
+//         display: inline-block;
+//     }
+// }
+
+// .grid-item {
+//     width: 320px;
+//     height: 160px;
+// }
